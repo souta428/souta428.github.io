@@ -1,0 +1,110 @@
+/* ベーススタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* メインビジュアル */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* 最新投稿セクション */
+.latest-posts {
+    padding: 20px;
+    text-align: center;
+}
+
+.latest-posts h2 {
+    font-size: 28px;
+}
+
+.post-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 5px;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post h3 {
+    font-size: 20px;
+}
+
+.post p {
+    font-size: 14px;
+    color: #555;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+}
