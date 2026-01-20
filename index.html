@@ -3,50 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nex ブログ</title>
+    <title>Souta Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>アート＆サイエンス ブログ</h1>
-        <nav>
-            <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">アート</a></li>
-                <li><a href="#">研究</a></li>
-                <li><a href="#">プロフィール</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-            </ul>
-        </nav>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#top">Souta</a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="top">
         <section class="hero">
-            <h2>アートと研究の融合</h2>
-            <p>創造と探求の旅へようこそ。</p>
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow">Art x Science / Visual Experiments</p>
+                    <h1>感覚を拡張するビジュアル体験を作る。</h1>
+                    <p class="lead">
+                        写真、p5.js、TouchDesignerを軸に、観測・記録・生成を行き来する作品を制作。
+                        展示空間やWebで体験できる形に落とし込んでいます。
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#works">作品を見る</a>
+                        <a class="btn ghost" href="#contact">制作相談</a>
+                    </div>
+                    <div class="hero-tags">
+                        <span>Photography</span>
+                        <span>p5.js</span>
+                        <span>TouchDesigner</span>
+                        <span>Installation</span>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-inner">
+                        <p class="card-title">Selected Focus</p>
+                        <ul>
+                            <li>光と動きの記録</li>
+                            <li>インタラクティブな生成映像</li>
+                            <li>身体性を意識した体験設計</li>
+                        </ul>
+                        <p class="card-note">展示やコラボのご相談歓迎です。</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="latest-posts">
-            <h2>最新の投稿</h2>
-            <div class="post-grid">
-                <article class="post">
-                    <img src="art.jpg" alt="アート作品">
-                    <h3>アートの最新記事</h3>
-                    <p>最新のアート作品やインスピレーションを紹介。</p>
-                    <a href="#">続きを読む</a>
-                </article>
-                <article class="post">
-                    <img src="science.jpg" alt="研究イメージ">
-                    <h3>研究の最新記事</h3>
-                    <p>最新の研究内容や発見をシェア。</p>
-                    <a href="#">続きを読む</a>
-                </article>
+        <section id="about" class="section">
+            <div class="container split">
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        東京を拠点に活動するクリエイティブテクノロジスト。写真とコードを並行して
+                        制作し、実験的なプロトタイピングから展示作品まで幅広く手がけています。
+                    </p>
+                    <p>
+                        観測した現象をデータ化し、再構成して新しい感覚として提示することをテーマに制作しています。
+                    </p>
+                </div>
+                <div class="about-meta">
+                    <div>
+                        <p class="label">Services</p>
+                        <p>展示作品 / Web体験 / 映像制作</p>
+                    </div>
+                    <div>
+                        <p class="label">Tools</p>
+                        <p>p5.js, TouchDesigner, After Effects, Lightroom</p>
+                    </div>
+                    <div>
+                        <p class="label">Based in</p>
+                        <p>Tokyo, JP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Works</h2>
+                    <p>カテゴリ別に抜粋。p5.js作品は実際に動かせる体験ページへリンクします。</p>
+                </div>
+
+                <div class="works-group">
+                    <h3>Photography</h3>
+                    <div class="cards">
+                        <article class="card">
+                            <div class="thumb photo-1"></div>
+                            <h4>Night Signal</h4>
+                            <p>都市の光を抽象化したシリーズ。</p>
+                        </article>
+                        <article class="card">
+                            <div class="thumb photo-2"></div>
+                            <h4>Trace</h4>
+                            <p>移動の軌跡を長時間露光で記録。</p>
+                        </article>
+                        <article class="card">
+                            <div class="thumb photo-3"></div>
+                            <h4>Silent Field</h4>
+                            <p>風景に潜む規則性を探索。</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="works-group">
+                    <h3>p5.js Interactive</h3>
+                    <div class="cards">
+                        <article class="card">
+                            <div class="thumb p5-1"></div>
+                            <h4>Pulse Garden</h4>
+                            <p>音に反応して変形する粒子。</p>
+                            <a class="btn small" href="#">体験する</a>
+                        </article>
+                        <article class="card">
+                            <div class="thumb p5-2"></div>
+                            <h4>Orbit Study</h4>
+                            <p>マウス操作で軌道が変化する生成体。</p>
+                            <a class="btn small" href="#">体験する</a>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="works-group">
+                    <h3>TouchDesigner</h3>
+                    <div class="cards">
+                        <article class="card">
+                            <div class="thumb td-1"></div>
+                            <h4>Fluid Memory</h4>
+                            <p>流体シミュレーションと映像を合成。</p>
+                        </article>
+                        <article class="card">
+                            <div class="thumb td-2"></div>
+                            <h4>Echo Room</h4>
+                            <p>体の動きに反応するリピート映像。</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="works-group">
+                    <h3>Other Works</h3>
+                    <div class="cards">
+                        <article class="card">
+                            <div class="thumb other-1"></div>
+                            <h4>Prototype Notes</h4>
+                            <p>実験過程をまとめた記録アーカイブ。</p>
+                        </article>
+                        <article class="card">
+                            <div class="thumb other-2"></div>
+                            <h4>Sound Layers</h4>
+                            <p>音と映像を織り交ぜた短編。</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section">
+            <div class="container split">
+                <div>
+                    <h2>Process</h2>
+                    <p>
+                        フィールドでの観測と、コードによる再構成を往復させながら制作。
+                        作品は展示用のインスタレーションからWeb体験まで形を変えて展開します。
+                    </p>
+                </div>
+                <div class="timeline">
+                    <div>
+                        <p class="label">01 Observation</p>
+                        <p>撮影・録音・センサー計測で素材を収集。</p>
+                    </div>
+                    <div>
+                        <p class="label">02 Translation</p>
+                        <p>データ化し、生成ルールへ翻訳。</p>
+                    </div>
+                    <div>
+                        <p class="label">03 Experience</p>
+                        <p>体験の導線を設計し、空間やWebに展開。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact-inner">
+                <div>
+                    <h2>Contact</h2>
+                    <p>展示、共同制作、撮影依頼などお気軽にご連絡ください。</p>
+                </div>
+                <div class="contact-card">
+                    <p class="label">Email</p>
+                    <a href="mailto:hello@example.com">hello@example.com</a>
+                    <p class="label">Social</p>
+                    <div class="socials">
+                        <a href="#">Instagram</a>
+                        <a href="#">Behance</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 アート＆サイエンス ブログ</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Souta Portfolio</p>
+        </div>
     </footer>
 </body>
 </html>
