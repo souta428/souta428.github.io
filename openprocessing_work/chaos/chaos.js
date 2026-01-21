@@ -13,7 +13,8 @@ let particles = [];
 
 function setup() {
   const canvas = createCanvas(1000, 1000, WEBGL);
-  canvas.parent("sketch");
+  const target = document.getElementById("sketch") || document.body;
+  canvas.parent(target);
   colorMode(HSB, 360, 100, 100, 100);
   
   // 複数のパーティクルを初期化
