@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riparian Series | Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --surface: #151515;
+            --text: #f2efe8;
+            --muted: #bdb7ac;
+            --accent: #ffb18b;
+            --line: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top right, #1e1a16, transparent 45%), var(--bg);
+            color: var(--text);
+            font-family: "Space Grotesk", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(8px);
+            background: rgba(13, 13, 13, 0.78);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .header-inner {
+            width: min(980px, 92vw);
+            margin: 0 auto;
+            padding: 16px 0;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .title-wrap h1 {
+            margin: 0;
+            font-family: "Bebas Neue", sans-serif;
+            letter-spacing: 0.08em;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .title-wrap p {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.88rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .gallery {
+            width: min(980px, 92vw);
+            margin: 28px auto 64px;
+            display: grid;
+            gap: 26px;
+        }
+
+        figure {
+            margin: 0;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            background: #000;
+        }
+
+        figcaption {
+            padding: 10px 14px;
+            font-size: 0.82rem;
+            color: var(--muted);
+            border-top: 1px solid var(--line);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="title-wrap">
+                <h1>Riparian Series</h1>
+                <p>スクロールして鑑賞できるフォトアーカイブ</p>
+            </div>
+            <a class="back-link" href="../../index.html">Portfolioへ戻る</a>
+        </div>
+    </header>
+
+    <main class="gallery">
+        <figure>
+            <img src="DSC00042.JPG" alt="Riparian Series photo 01">
+            <figcaption>01</figcaption>
+        </figure>
+        <figure>
+            <img src="DSC00072.JPG" alt="Riparian Series photo 02">
+            <figcaption>02</figcaption>
+        </figure>
+        <figure>
+            <img src="DSC00087.JPG" alt="Riparian Series photo 03">
+            <figcaption>03</figcaption>
+        </figure>
+    </main>
+</body>
+</html>
