@@ -326,7 +326,15 @@ img {
 .thumb {
     height: 160px;
     border-radius: 14px;
+    overflow: hidden;
     background: linear-gradient(135deg, #f5f0ea, #ffe5d6);
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .photo-1 {

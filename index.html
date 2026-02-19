@@ -106,25 +106,33 @@
                     <h3>Photography</h3>
                     <div class="cards">
                         <article class="card">
-                            <div class="thumb photo-1"></div>
+                            <div class="thumb photo-1">
+                                <img class="series-thumb" data-series="plants" alt="Plant Series thumbnail">
+                            </div>
                             <h4>Plant Series</h4>
                             <p>植物のテクスチャ、光、密度の変化を記録した写真シリーズ。</p>
                             <a class="btn small" href="photography/plants/">鑑賞する</a>
                         </article>
                         <article class="card">
-                            <div class="thumb photo-2"></div>
+                            <div class="thumb photo-2">
+                                <img class="series-thumb" data-series="life" alt="Life Series thumbnail">
+                            </div>
                             <h4>Life Series</h4>
                             <p>生活空間の断片に宿るリズムと温度を切り取ったシリーズ。</p>
                             <a class="btn small" href="photography/Life/">鑑賞する</a>
                         </article>
                         <article class="card">
-                            <div class="thumb photo-3"></div>
+                            <div class="thumb photo-3">
+                                <img class="series-thumb" data-series="monuments" alt="Monuments Series thumbnail">
+                            </div>
                             <h4>Monuments Series</h4>
                             <p>構造物の質量感と時間の堆積を見つめるシリーズ。</p>
                             <a class="btn small" href="photography/Monuments/">鑑賞する</a>
                         </article>
                         <article class="card">
-                            <div class="thumb photo-1"></div>
+                            <div class="thumb photo-1">
+                                <img class="series-thumb" data-series="riparian" alt="Riparian Series thumbnail">
+                            </div>
                             <h4>Riparian Series</h4>
                             <p>水辺の境界で変化する光と地形を追ったシリーズ。</p>
                             <a class="btn small" href="photography/Riparian/">鑑賞する</a>
@@ -265,5 +273,47 @@
             <p>&copy; 2025 Souta Portfolio</p>
         </div>
     </footer>
+    <script>
+        const photoSeries = {
+            plants: [
+                "photography/plants/2P0A4135.JPG",
+                "photography/plants/2P3A5661%20(1).JPG",
+                "photography/plants/DSC00007.JPG",
+                "photography/plants/DSC00009.JPG",
+                "photography/plants/DSC00035.JPG",
+                "photography/plants/DSC00037.JPG",
+                "photography/plants/DSC00049.JPG",
+                "photography/plants/DSC00051.JPG",
+                "photography/plants/DSC00052.JPG",
+                "photography/plants/DSC00059%20(1).JPG",
+                "photography/plants/DSC00064.JPG",
+                "photography/plants/DSC00081.JPG",
+                "photography/plants/DSC00082.JPG",
+                "photography/plants/DSC00095.JPG"
+            ],
+            life: [
+                "photography/Life/2P0A4021.JPG",
+                "photography/Life/2P0A4100.JPG",
+                "photography/Life/2P0A4163.JPG"
+            ],
+            monuments: [
+                "photography/Monuments/DSC00073.JPG",
+                "photography/Monuments/DSC00086.JPG"
+            ],
+            riparian: [
+                "photography/Riparian/DSC00042.JPG",
+                "photography/Riparian/DSC00072.JPG",
+                "photography/Riparian/DSC00087.JPG"
+            ]
+        };
+
+        document.querySelectorAll(".series-thumb").forEach((img) => {
+            const seriesName = img.dataset.series;
+            const items = photoSeries[seriesName];
+            if (!items || items.length === 0) return;
+            const pick = items[Math.floor(Math.random() * items.length)];
+            img.src = pick;
+        });
+    </script>
 </body>
 </html>
