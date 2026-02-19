@@ -7,7 +7,9 @@ let soundLevel = 1;
 let time = 0;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight, WEBGL);
+  const canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+  const target = document.getElementById("sketch") || document.body;
+  canvas.parent(target);
   background(0);
 
   mic = new p5.AudioIn();
@@ -17,6 +19,13 @@ function setup() {
 
   for (let i = 0; i < numParticles; i++) {
     particles.push(new Particle());
+  }
+}
+
+function mousePressed() {
+  if (getAudioContext().state !== "running") {
+    userStartAudio();
+    mic.start();
   }
 }
 

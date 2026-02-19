@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonant Soundscape | p5.js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: #050505;
+            color: #fff;
+            font-family: "Space Grotesk", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 12px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header a {
+            color: #ffb18b;
+            text-decoration: none;
+        }
+
+        .hint {
+            font-size: 11px;
+            text-transform: none;
+            letter-spacing: 0.05em;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        main {
+            flex: 1;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div>Resonant Soundscape</div>
+            <div class="hint">click to enable microphone</div>
+        </div>
+        <a href="../../index.html">Portfolioへ戻る</a>
+    </header>
+    <main id="sketch"></main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <script src="Resonant Soundscape.js"></script>
+</body>
+</html>
